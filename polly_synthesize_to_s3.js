@@ -21,6 +21,7 @@ node polly_synthesize_to_s3.js
 // snippet-start:[Polly.JavaScript.general-examples.synthesizetos3_V3]
 const { StartSpeechSynthesisTaskCommand } = require("@aws-sdk/client-polly");
 const { pollyClient } = require("./libs/pollyClient.js");
+const { http } = require("http");
 
 // Create the parameters
 var params = {
