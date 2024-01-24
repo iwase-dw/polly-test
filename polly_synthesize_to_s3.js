@@ -42,4 +42,11 @@ const run = async () => {
 };
 run();
 
+http
+  .createServer(async (req, res) => {
+    res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+    res.end("running polly-test");
+  })
+  .listen(8080);
+
 // snippet-end:[Polly.JavaScript.general-examples.synthesizetos3_V3]
